@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Finance Manager</title>
+<link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file for styling -->
+<style>
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.webp'); /* URL of your background image */
+  background-size: cover;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: rgba(0, 123, 255, 0.8); /* Background color with transparency */
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p.tagline {
+  font-size: 18px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004080;
+}
+
+/* Feature section styles */
+#features {
+  font-family: Arial, sans-serif;
+  background-image: url('background2.jpg'); /* URL of your background image */
+  background-size: cover;
+  color: #ffffff;
+}
+
+#features .feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#features .feature img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#features h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#features p {
+  font-size: 16px;
+}
+
+/* About section styles */
+#about {
+  font-family: Arial, sans-serif;
+  background-image: url('background.webp'); /* URL of your background image */
+  background-size: cover;
+  color: #ffffff;
+}
+
+#about ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+}
+
+#about a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section styles */
+#contact {
+  font-family: Arial, sans-serif;
+  background-image: url('background.webp'); /* URL of your background image */
+  background-size: cover;
+  color: #ffffff;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#contact button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Personal Finance Manager</h1>
+    <p class="tagline">Empowering Financial Health, One Save at a Time</p>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="https://example.com/app" class="btn">Try Now</a>
+  </div>
+</header>
+
+<section id="features">
+  <div class="container">
+    <h2>Key Features</h2>
+    <div class="feature">
+      <img src="feature1.png" alt="Feature 1">
+      <h3>Expense Tracking</h3>
+      <p>Track your daily expenses effortlessly and gain insights into your spending habits.</p>
+    </div>
+    <div class="feature">
+      <img src="feature2.png" alt="Feature 2">
+      <h3>Savings Goals</h3>
+      <p>Set savings goals for various purposes and monitor your progress towards financial milestones.</p>
+    </div>
+    <div class="feature">
+      <img src="feature3.png" alt="Feature 3">
+      <h3>Reports & Analytics</h3>
+      <p>View detailed reports and analytics to make informed financial decisions and optimize your savings strategies.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>This project is inspired by our passion for promoting financial literacy and helping individuals achieve their financial goals.</p>
+    <p>Meet our team:</p>
+    <ul>
+      <li>Motekema Mahlanya</li>
+      <li>Joshua Chikasha</li>
+    </ul>
+    <p>For more information, visit our <a href="https://github.com/Lebohang1821/personal-financial-manager">GitHub repository</a>.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have questions or feedback? Reach out to us!</p>
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Personal Finance Manager</p>
+  </div>
+</footer>
+
+</body>
+</html>
