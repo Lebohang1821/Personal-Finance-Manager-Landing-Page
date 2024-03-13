@@ -178,6 +178,17 @@ header nav ul li a {
 #contact button:hover {
   background-color: #0056b3;
 }
+
+/* Video section styles */
+#video {
+  background-color: #000; /* Black background to prevent white borders */
+}
+
+#video video {
+  width: 100%; /* Make the video fill the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the video is displayed as a block element */
+}
 </style>
 </head>
 <body>
@@ -215,6 +226,17 @@ header nav ul li a {
       <h3>Reports & Analytics</h3>
       <p>View detailed reports and analytics to make informed financial decisions and optimize your savings strategies.</p>
     </div>
+  </div>
+</section>
+
+<!-- Video section -->
+<section id="video">
+  <div class="container">
+    <h2>Learn More</h2>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </section>
 
